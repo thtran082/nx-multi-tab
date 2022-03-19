@@ -1,0 +1,98 @@
+{
+  "projectType": "application",
+  "root": "apps/multitab",
+  "sourceRoot": "apps/multitab/src",
+  "prefix": "multitab",
+  "targets": {
+    "build": {
+      "executor": "@angular-devkit/build-angular:browser",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/multitab",
+        "index": "apps/multitab/src/index.html",
+        "main": "apps/multitab/src/main.ts",
+        "polyfills": "apps/multitab/src/polyfills.ts",
+        "tsConfig": "apps/multitab/tsconfig.app.json",
+        "inlineStyleLanguage": "scss",
+        "assets": ["apps/multitab/src/favicon.ico", "apps/multitab/src/assets"],
+        "styles": ["apps/multitab/src/styles.scss"],
+        "scripts": []
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "2kb",
+              "maximumError": "4kb"
+            }
+          ],
+          "fileReplacements": [
+            {
+              "replace": "apps/multitab/src/environments/environment.ts",
+              "with": "apps/multitab/src/environments/environment.prod.ts"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "development": {
+          "buildOptimizer": false,
+          "optimization": false,
+          "vendorChunk": true,
+          "extractLicenses": false,
+          "sourceMap": true,
+          "namedChunks": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@angular-devkit/build-angular:dev-server",
+      "configurations": {
+        "production": {
+          "browserTarget": "multitab:build:production"
+        },
+        "development": {
+          "browserTarget": "multitab:build:development"
+        }
+      },
+      "defaultConfiguration": "development",
+      "options": {
+        "port": 4200
+      }
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "browserTarget": "multitab:build"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "apps/multitab/src/**/*.ts",
+          "apps/multitab/src/**/*.html"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@angular-devkit/build-angular:karma",
+      "options": {
+        "main": "apps/multitab/src/test.ts",
+        "tsConfig": "apps/multitab/tsconfig.spec.json",
+        "karmaConfig": "apps/multitab/karma.conf.js",
+        "polyfills": "apps/multitab/src/polyfills.ts",
+        "styles": [],
+        "scripts": [],
+        "assets": []
+      }
+    }
+  },
+  "tags": []
+}

@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/core/list/shell/main",
+  "sourceRoot": "libs/core/list/shell/main/src",
+  "prefix": "nx-multi-tab",
+  "targets": {
+    "test": {
+      "executor": "@angular-devkit/build-angular:karma",
+      "options": {
+        "main": "libs/core/list/shell/main/src/test.ts",
+        "tsConfig": "libs/core/list/shell/main/tsconfig.spec.json",
+        "karmaConfig": "libs/core/list/shell/main/karma.conf.js"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/core/list/shell/main/src/**/*.ts",
+          "libs/core/list/shell/main/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

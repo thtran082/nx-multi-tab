@@ -1,0 +1,8 @@
+<ng-container *ngrxLet="vm$; let vm">
+  <div>Welcome to list</div>
+  <div *ngFor="let user of vm.users">
+    <div class="text-red-500">
+      {{user.id}}
+    </div>
+  </div>
+</ng-container>

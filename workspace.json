@@ -1,4 +1,12 @@
 {
   "version": 2,
-  "projects": {}
+  "projects": {
+    "core-list-shell-main": "libs/core/list/shell/main",
+    "core-shared-data-access-store": "libs/core/shared/data-access/store",
+    "core-shared-resources-environments": "libs/core/shared/resources/environments",
+    "core-shell-main": "libs/core/shell/main",
+    "core-shell-ui-layout": "libs/core/shell/ui/layout",
+    "multitab": "apps/multitab",
+    "multitab-e2e": "apps/multitab-e2e"
+  }
 }

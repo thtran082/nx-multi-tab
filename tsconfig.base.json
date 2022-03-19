@@ -14,7 +14,17 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@core-shell": ["libs/core/shell/main/src/index.ts"],
+      "@core-shell-ui-layout": ["libs/core/shell/ui/layout/src/index.ts"],
+      "@multitab/core-list-shell-main": [
+        "libs/core/list/index.ts"
+      ],
+      "@multitab/main/shared/data-access/store": [
+        "libs/core/shared/data-access/store/src/index.ts"
+      ],
+      "@shared-utils-environments": ["libs/core/shared/resources/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

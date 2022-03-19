@@ -1,0 +1,28 @@
+{
+  "root": "apps/multitab-e2e",
+  "sourceRoot": "apps/multitab-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/multitab-e2e/cypress.json",
+        "devServerTarget": "multitab:serve:development"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "multitab:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/multitab-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["multitab"]
+}
