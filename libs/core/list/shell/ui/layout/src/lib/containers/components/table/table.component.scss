@@ -1,0 +1,12 @@
+.table {
+  &__container {
+    @apply w-full h-full overflow-auto;
+    &__header {
+      @apply text-left uppercase bg-blue-400 text-white sticky top-0;
+    }
+
+    &__body {
+
+    }
+  }
+}

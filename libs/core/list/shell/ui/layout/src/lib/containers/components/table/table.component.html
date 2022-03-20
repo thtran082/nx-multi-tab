@@ -1,0 +1,24 @@
+<div class="table">
+  <table class="table__container">
+    <thead class="table__container__header">
+    <th class="header__col__id">ID</th>
+    <th class="header__col__login">Nick name</th>
+    <th class="header__col__avatar">avatar</th>
+    <th class="header__col__id"></th>
+    </thead>
+    <tbody class="table__container__body">
+    <ng-container *ngFor="let item of data">
+      <tr class="body__row">
+        <td class="body__row__col__id">{{item.id}}</td>
+        <td class="body__row__col__login">{{item.login}}</td>
+        <td class="body__row__col__avatar">
+          <img [src]="item.avatar_url" width="64" height="64" [alt]="item.avatar_url" />
+        </td>
+        <td class="body__row__col__shortcut">
+          <multitab-icon [icon]="IconStyle.IcOpenInNew" [color]="TextColorEnum.Primary1" (click)="onClick(item.html_url)"></multitab-icon>
+        </td>
+      </tr>
+    </ng-container>
+    </tbody>
+  </table>
+</div>

@@ -14,7 +14,11 @@
         "polyfills": "apps/multitab/src/polyfills.ts",
         "tsConfig": "apps/multitab/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
-        "assets": ["apps/multitab/src/favicon.ico", "apps/multitab/src/assets"],
+        "assets": ["apps/multitab/src/favicon.ico", "apps/multitab/src/assets, ", {
+          "glob": "**/*",
+          "input": "libs/shared/ui/icon/src/lib/svg",
+          "output": "assets"
+        }],
         "styles": ["apps/multitab/src/styles.scss"],
         "scripts": []
       },

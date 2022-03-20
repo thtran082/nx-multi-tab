@@ -27,6 +27,8 @@
       "@multitab/main/shared/data-access/store": [
         "libs/core/shared/data-access/store/src/index.ts"
       ],
+      "@multitab/shared-icons": ["libs/shared/ui/icon/src/index.ts"],
+      "@multitab/shared-enums": ["libs/shared/utils/enum/index.ts"],
       "@shared-utils-environments": ["libs/core/shared/resources/index.ts"]
     }
   },

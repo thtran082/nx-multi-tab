@@ -4,8 +4,15 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './containers';
 import { HttpClientModule } from '@angular/common/http';
 import { CoreShellMainModule } from '@core-shell';
+import { IconModule } from "@multitab/shared-icons";
 
-const MODULES: any[] = [BrowserModule, RouterModule, HttpClientModule, CoreShellMainModule];
+const MODULES: any[] = [
+  BrowserModule,
+  RouterModule,
+  HttpClientModule,
+  CoreShellMainModule,
+  IconModule,
+];
 
 const PROVIDERS: any[] = [
   // something

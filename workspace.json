@@ -9,6 +9,7 @@
     "core-shell-main": "libs/core/shell/main",
     "core-shell-ui-layout": "libs/core/shell/ui/layout",
     "multitab": "apps/multitab",
-    "multitab-e2e": "apps/multitab-e2e"
+    "multitab-e2e": "apps/multitab-e2e",
+    "shared-ui-icon": "libs/shared/ui/icon"
   }
 }

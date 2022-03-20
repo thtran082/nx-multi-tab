@@ -107,6 +107,15 @@ module.exports = {
     max: 'max-content',
     inherit: 'inherit',
   }),
+  borderColor: (theme) => ({
+    ...theme('colors'),
+  }),
+  textColor: (theme) => ({
+    ...theme('colors'),
+  }),
+  backgroundColor: (theme) => ({
+    ...theme('colors'),
+  }),
   spacing: {
     '0.25': '0.0625rem', // 1px
     '0.5': '0.125rem', // 2px
@@ -242,4 +251,24 @@ module.exports = {
     '2/4-screen': '50vh',
     '3/4-screen': '75vh',
   },
+  colors: {
+    'link-base': {},
+    'link-primary': {
+      1: '#b589d6',
+      2: '#9969c7',
+      3: '#804fb3',
+      4: '#6a359c',
+      5: '#552586',
+    },
+    'link-secondary': {},
+    'link-green': {
+      1: '#dfeae2',
+      2: '#b4d6c1',
+      3: '#8dcea7',
+      4: '#6baf92',
+      5: '#4e9c81',
+      6: '#358873',
+      7: '#207567',
+    }
+  }
 };
