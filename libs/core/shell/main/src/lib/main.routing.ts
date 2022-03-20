@@ -19,6 +19,4 @@ const routes: Route[] = [
   }
 ];
 
-export const MultitabCoreShellMainRoutes = RouterModule.forRoot(routes, {
-  enableTracing: true,
-});
+export const MultitabCoreShellMainRoutes = RouterModule.forRoot(routes);

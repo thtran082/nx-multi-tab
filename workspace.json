@@ -1,7 +1,9 @@
 {
   "version": 2,
   "projects": {
+    "core-list-shared-data-access-store": "libs/core/list/shared/data-access/store",
     "core-list-shell-main": "libs/core/list/shell/main",
+    "core-list-shell-ui-layout": "libs/core/list/shell/ui/layout",
     "core-shared-data-access-store": "libs/core/shared/data-access/store",
     "core-shared-resources-environments": "libs/core/shared/resources/environments",
     "core-shell-main": "libs/core/shell/main",

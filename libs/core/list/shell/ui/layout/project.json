@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/core/list/shell/ui/layout",
+  "sourceRoot": "libs/core/list/shell/ui/layout/src",
+  "prefix": "multitab-core-list-layout",
+  "targets": {
+    "test": {
+      "executor": "@angular-devkit/build-angular:karma",
+      "options": {
+        "main": "libs/core/list/shell/ui/layout/src/test.ts",
+        "tsConfig": "libs/core/list/shell/ui/layout/tsconfig.spec.json",
+        "karmaConfig": "libs/core/list/shell/ui/layout/karma.conf.js"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/core/list/shell/ui/layout/src/**/*.ts",
+          "libs/core/list/shell/ui/layout/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

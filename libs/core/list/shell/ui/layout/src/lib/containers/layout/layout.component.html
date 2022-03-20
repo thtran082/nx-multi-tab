@@ -1,0 +1,8 @@
+<ng-container *ngrxLet="vm$; let vm">
+  <ng-container *ngIf="vm.status === StatusEnum.LOADING; else listRef">
+  <span>loading...</span>
+  </ng-container>
+  <ng-template #listRef>
+    <multitab-core-list-layout-table [data]="vm.users"></multitab-core-list-layout-table>
+  </ng-template>
+</ng-container>
